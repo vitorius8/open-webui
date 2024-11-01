@@ -1,0 +1,44 @@
+services:
+  open-webui:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        USE_CUDA: "false"
+        USE_OLLAMA: "false"
+        BUILD_HASH: "dev"
+
+    image: local-webui-dev:latest
+    container_name: open-webui-dev
+
+    volumes:
+      - ./backend:/app/backend
+      - ./src:/app/src
+      - open-webui:/app/backend/data
+      - node_modules:/app/node_modules
+
+    ports:
+      - ${OPEN_WEBUI_PORT-3000}:8080
+
+    environment:
+      - ENV=development
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - PORT=8080
+      - PYTHONUNBUFFERED=1
+
+    develop:
+      watch:
+        - path: ./backend
+          action: sync
+          target: /app/backend
+        - path: ./src
+          action: sync
+          target: /app/src
+        - path: package.json
+          action: rebuild
+        - path: package-lock.json
+          action: rebuild
+
+volumes:
+  open-webui:
+  node_modules:

@@ -202,14 +202,14 @@
 							</span>
 						</div>
 
-						<div class=" ">
-							<span class="">
-								{$i18n.t('Active Users')}:
-							</span>
-							<span class=" font-semibold">
-								{$activeUserCount}
-							</span>
-						</div>
+						<!-- <div class=" "> -->
+							<!-- <span class=""> -->
+								<!-- {$i18n.t('Active Users')}: -->
+							<!-- </span> -->
+							<!-- <span class=" font-semibold"> -->
+								<!-- {$activeUserCount} -->
+							<!-- </span> -->
+						<!-- </div> -->
 					</div>
 				</Tooltip>
 			{/if}
