@@ -53,22 +53,22 @@
 			</div>
 			<div class="flex w-full justify-between items-center">
 				<div class="flex flex-col text-xs text-gray-700 dark:text-gray-200">
-					<div class="flex gap-1">
-						<Tooltip content={WEBUI_BUILD_HASH}>
-							v{WEBUI_VERSION}
-						</Tooltip>
+					<!-- <div class="flex gap-1"> -->
+						<!-- <Tooltip content={WEBUI_BUILD_HASH}> -->
+							<!-- v{WEBUI_VERSION} -->
+						<!-- </Tooltip> -->
 
-						<a
-							href="https://github.com/open-webui/open-webui/releases/tag/v{version.latest}"
-							target="_blank"
-						>
-							{updateAvailable === null
-								? $i18n.t('Checking for updates...')
-								: updateAvailable
-									? `(v${version.latest} ${$i18n.t('available!')})`
-									: $i18n.t('(latest)')}
-						</a>
-					</div>
+						<!-- <a -->
+							<!-- href="https://github.com/open-webui/open-webui/releases/tag/v{version.latest}" -->
+							<!-- target="_blank" -->
+						<!-- > -->
+							<!-- {updateAvailable === null -->
+								<!-- ? $i18n.t('Checking for updates...') -->
+								<!-- : updateAvailable -->
+									<!-- ? `(v${version.latest} ${$i18n.t('available!')})` -->
+									<!-- : $i18n.t('(latest)')} -->
+						<!-- </a> -->
+					<!-- </div> -->
 
 					<button
 						class=" underline flex items-center space-x-1 text-xs text-gray-500 dark:text-gray-500"
@@ -76,7 +76,7 @@
 							showChangelog.set(true);
 						}}
 					>
-						<div>{$i18n.t("See what's new")}</div>
+						<!-- <div>{$i18n.t("See what's new")}</div> -->
 					</button>
 				</div>
 
@@ -104,6 +104,7 @@
 			</div>
 		{/if}
 
+<<<<<<< HEAD
 		<hr class=" border-gray-100 dark:border-gray-850" />
 
 		<div class="mt-2 text-xs text-gray-400 dark:text-gray-500">
@@ -114,23 +115,22 @@
 
 		<div class="flex space-x-1">
 			<a href="https://discord.gg/5rJgQTnV4s" target="_blank">
+=======
+		<hr class=" dark:border-gray-850" />
+		
+		<div className="flex space-x-2">
+			<a href="https://moyset.ru/info/" target="_blank" rel="noopener noreferrer">
+>>>>>>> f5afd0820 (feat: rebrand UI assets and add development configuration)
 				<img
-					alt="Discord"
-					src="https://img.shields.io/badge/Discord-Open_WebUI-blue?logo=discord&logoColor=white"
+					alt="Moyset Info"
+					src="https://img.shields.io/badge/Moyset-Info-blue?logo=website&logoColor=white"
 				/>
 			</a>
-
-			<a href="https://twitter.com/OpenWebUI" target="_blank">
+			
+			<a href="https://t.me/moyset_chanel" target="_blank" rel="noopener noreferrer">
 				<img
-					alt="X (formerly Twitter) Follow"
-					src="https://img.shields.io/twitter/follow/OpenWebUI"
-				/>
-			</a>
-
-			<a href="https://github.com/open-webui/open-webui" target="_blank">
-				<img
-					alt="Github Repo"
-					src="https://img.shields.io/github/stars/open-webui/open-webui?style=social&label=Star us on Github"
+					alt="Telegram Channel"
+					src="https://img.shields.io/badge/Telegram-Channel-blue?logo=telegram&logoColor=white"
 				/>
 			</a>
 		</div>
@@ -172,14 +172,14 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 		</div>
 
 		<div class="mt-2 text-xs text-gray-400 dark:text-gray-500">
-			{#if !$WEBUI_NAME.includes('Open WebUI')}
+			{#if !$WEBUI_NAME.includes('MOYSET WebUI')}
 				<span class=" text-gray-500 dark:text-gray-300 font-medium">{$WEBUI_NAME}</span> -
 			{/if}
 			{$i18n.t('Created by')}
 			<a
 				class=" text-gray-500 dark:text-gray-300 font-medium"
 				href="https://github.com/tjbck"
-				target="_blank">Timothy J. Baek</a
+				target="_blank">MOYSET</a
 			>
 		</div>
 	</div>

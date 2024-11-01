@@ -202,6 +202,7 @@
 							</span>
 						</div>
 
+<<<<<<< HEAD
 						<div class=" ">
 							<span class="">
 								{$i18n.t('Active Users')}:
@@ -210,6 +211,16 @@
 								{$activeUserIds?.length}
 							</span>
 						</div>
+=======
+						<!-- <div class=" "> -->
+							<!-- <span class=""> -->
+								<!-- {$i18n.t('Active Users')}: -->
+							<!-- </span> -->
+							<!-- <span class=" font-semibold"> -->
+								<!-- {$activeUserCount} -->
+							<!-- </span> -->
+						<!-- </div> -->
+>>>>>>> f5afd0820 (feat: rebrand UI assets and add development configuration)
 					</div>
 				</Tooltip>
 			{/if}
