@@ -48,7 +48,7 @@
 			<div class=" mb-2.5 text-sm font-medium flex space-x-2 items-center">
 				<div>
 					{$WEBUI_NAME}
-					{$i18n.t('Version')}
+					{$i18n.t('AI')}
 				</div>
 			</div>
 			<div class="flex w-full justify-between items-center">
@@ -80,14 +80,14 @@
 					</button>
 				</div>
 
-				<button
-					class=" text-xs px-3 py-1.5 bg-gray-100 hover:bg-gray-200 dark:bg-gray-850 dark:hover:bg-gray-800 transition rounded-lg font-medium"
-					on:click={() => {
-						checkForVersionUpdates();
-					}}
-				>
-					{$i18n.t('Check for updates')}
-				</button>
+				<!-- <button -->
+					<!-- class=" text-xs px-3 py-1.5 bg-gray-100 hover:bg-gray-200 dark:bg-gray-850 dark:hover:bg-gray-800 transition rounded-lg font-medium" -->
+					<!-- on:click={() => { -->
+						<!-- checkForVersionUpdates(); -->
+					<!-- }} -->
+				<!-- > -->
+					<!-- {$i18n.t('Check for updates')} -->
+				<!-- </button> -->
 			</div>
 		</div>
 
@@ -122,16 +122,16 @@
 			</a>
 		</div>
 
-		<div class="mt-2 text-xs text-gray-400 dark:text-gray-500">
-			{#if !$WEBUI_NAME.includes('MOYSET WebUI')}
-				<span class=" text-gray-500 dark:text-gray-300 font-medium">{$WEBUI_NAME}</span> -
-			{/if}
-			{$i18n.t('Created by')}
-			<a
-				class=" text-gray-500 dark:text-gray-300 font-medium"
-				href="https://github.com/tjbck"
-				target="_blank">MOYSET</a
-			>
-		</div>
+		<!-- <div class="mt-2 text-xs text-gray-400 dark:text-gray-500"> -->
+			<!-- {#if !$WEBUI_NAME.includes('MOYSET WebUI')} -->
+				<!-- <span class=" text-gray-500 dark:text-gray-300 font-medium">{$WEBUI_NAME}</span> - -->
+			<!-- {/if} -->
+			<!-- {$i18n.t('Created by')} -->
+			<!-- <a -->
+				<!-- class=" text-gray-500 dark:text-gray-300 font-medium" -->
+				<!-- href="https://github.com/tjbck" -->
+				<!-- target="_blank">MOYSET</a -->
+			<!-- > -->
+		<!-- </div> -->
 	</div>
 </div>
